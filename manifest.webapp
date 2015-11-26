@@ -3,7 +3,7 @@
     "description": "1:2=4:? you can know what ? is",
   "launch_path": "/index.html",
   "icons": {
-    "128": "http://my2.internetacademy.jp/~a31504085/ratio%20calculc/icons/icon.png"
+    "600": "http://my2.internetacademy.jp/~a31504085/ratio-calc/icons/icon.png"
   },
   "developer": {
     "name": "Tomoya Kobayashi",
