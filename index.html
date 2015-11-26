@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+
+    <style>
+      html{
+        height:100%;
+        width:100%;
+        margin:0;
+      }
+      body{
+        width:100%;
+        height:100%;
+        margin:0;
+        background-color:#214D63;
+        position:relative;
+      }
+
+      input{
+        height:2em;
+        width:80%;
+      font-size:50px;
+        margin-left:10%;
+        margin-right:10%;
+        margin-bottom:10px;
+      }
+      #id_form1{
+        float:left;
+      }
+      #id_form3{
+        float:left;
+      }
+      #title{
+        background-color:#717171;
+        
+      }
+      #titleInner{
+        width:100%;
+        margin-left:auto;
+        margin-right:auto;
+      }
+      h1{
+        text-align:center;
+        color:white;
+      }
+      table{
+        width:70%;
+        height:50%;
+        margin-left:15%;
+        margin-right:15%;
+      }
+      #ten{
+        width:10%;
+        height:5%;
+        font-size:50px;
+        margin-bottom:10px;
+      }
+      #calc{
+        height:5%;
+        width:20%;
+        margin-left:40%;
+        margin-right:40%;
+        background-color:white;
+        position:absolute;
+        border-radius:10px;
+        top:80%;
+        
+      }
+    </style>
+  <script>
+    
+    
+
+
+        function aspCalc4(){
+      
+       var a=document.forms.id_form1.id_textBox1.value;
+      var b=document.forms.id_form2.id_textBox2.value;
+      var d=document.forms.id_form4.id_textBox4.value;
+     a=parseInt(a,10);
+      b=parseInt(b,10);
+      d=parseInt(d,10);     
+      var c=a*d/b;
+      document.forms.id_form3.id_textBox3.value=c;
+    }
+
+    
+    
+  
+    function aspCalc3(){
+       var a=document.forms.id_form1.id_textBox1.value;
+      var b=document.forms.id_form2.id_textBox2.value;
+      var c=document.forms.id_form3.id_textBox3.value;
+     a=parseInt(a,10);
+      b=parseInt(b,10);
+      c=parseInt(c,10);     
+      var d=b*c/a;
+      document.forms.id_form4.id_textBox4.value=d;
+    }
+    
+    
+    /*function aspCalc2(){
+       var c=document.forms.id_form3.id_textBox3.value;
+      var d=document.forms.id_form4.id_textBox4.value;
+      var b=document.forms.id_form2.id_textBox2.value;
+     c=parseInt(c,10);
+      d=parseInt(d,10);
+      b=parseInt(b,10);     
+      var a=b*c/d;
+      document.forms.id_form1.id_textBox1.value=a;
+    }
+        function aspCalc1(){
+       var a=document.forms.id_form1.id_textBox1.value;
+      var c=document.forms.id_form3.id_textBox3.value;
+      var d=document.forms.id_form4.id_textBox4.value;
+     a=parseInt(a,10);
+      c=parseInt(c,10);
+      d=parseInt(d,10);     
+      var b=a*d/c;
+      document.forms.id_form2.id_textBox2.value=b;
+    }
+    */
+    
+    </script>
+    <!-- Inline scripts are forbidden in Firefox OS apps (CSP restrictions),
+         so we use a script file. -->
+    <script src="app.js" defer></script>
+
+  </head>
+
+  <body>
+    <!-- This code is in the public domain. Enjoy! -->
+    <div id="title"><div id="titleInner"><h1>Ratio Calculater</h1></div></div>
+    <table>
+      <tr>
+        <td>
+        <form id="id_form1">
+              <input type="number" onchange="aspCalc1()" id="id_textBox1" value=""/>
+         </form></td>
+        <td>
+          <div id="ten">:</div>
+          </td>
+         
+        <td>
+        <form id="id_form2">
+              <input type="number" onchange="aspCalc2()" id="id_textBox2" value=""/>
+         </form>
+          </td>
+      </tr>
+      <tr>
+        <td>   
+        <form id="id_form3">
+    <input type="number"  onchange="aspCalc3()" id="id_textBox3" value=""/>
+    </form>
+          </td>
+         <td>
+          <div id="ten">:</div>
+          </td>
+        <td >
+           <form id="id_form4">
+    <input type="number" onchange="aspCalc4()" id="id_textBox4" value=""/>
+    </form>
+          </td>
+        </tr>
+      <div id="calc">calculate!</div>
+      </body>
+
+</html>
