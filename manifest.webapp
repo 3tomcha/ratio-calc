@@ -3,7 +3,7 @@
     "description": "1:2=4:? you can know what ? is",
   "launch_path": "/index.html",
   "icons": {
-    "128": "/icons/icon.png"
+    "128": "ratio-calc/icons/icon.png"
   },
   "developer": {
     "name": "Tomoya Kobayashi",
