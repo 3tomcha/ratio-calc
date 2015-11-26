@@ -1,7 +1,7 @@
 {
   "name": "ratio calc",
     "description": "1:2=4:? you can know what ? is",
-  "launch_path": "/index.html",
+  "launch_path": "ratio-calc/index.html",
   "icons": {
     "128": "http://my2.internetacademy.jp/~a31504085/ratio-calc/icons/icon.png"
   },
